@@ -1,0 +1,350 @@
+/* body */
+
+body {
+    background-color: black;
+}
+
+.body::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1900px) {
+    body {
+        min-width: 40%;
+    }
+    #right-half-top {
+        transform: translateX(-180px);
+    }
+    #search-input {
+        position: relative;
+        left: -50px;
+        top: 50px;
+    }
+    #bell-icon {
+        position: relative;
+        left: 200px;
+        top: -35px;
+    }
+    #user-img {
+        position: relative;
+        top: -28px;
+        left: 230px;
+    }
+    .upper-left-text {
+        /* transform: translateX(300px); */
+        position: relative !important;
+        left: 90px;
+        top: 5px;
+        font-size: 1.25rem;
+    }
+    #logo-text {
+        font-size: 1.2rem;
+    }
+    #artist {
+        /* transform: scaleY(0.9); */
+        height: 30%;
+    }
+    #artist-info {
+        font-size: 1.1rem;
+    }
+    #left-sub-heading {
+        margin-top: -25% !important;
+        position: relative;
+        left: 30px;
+    }
+    #div-heading {
+        position: relative;
+        left: -20px;
+    }
+    #similar-artists {
+        height: 15% !important;
+    }
+    #list-container {
+        margin-top: 10% !important;
+        height: 25% !important;
+        min-height: 10vh !important;
+    }
+    #list-div {
+        height: 4% !important;
+    }
+    #heart {
+        display: none;
+    }
+    #list-container2 {
+        width: 120%;
+        max-height: 40vh !important;
+        overflow-y: scroll;
+        scrollbar-color: transparent;
+    }
+}
+
+
+/* Player */
+
+#audio-player {
+    background-color: white;
+    width: 100%;
+    height: 3%;
+    position: fixed;
+    top: 97%;
+}
+
+#audio-player audio {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Top Section */
+
+#search-form {
+    display: inline-block;
+}
+
+#right-half-top {
+    position: absolute;
+    left: 80%;
+}
+
+.upper-left-text {
+    width: 5%;
+    height: 3%;
+    margin-left: 15%;
+    color: white;
+    display: inline-block;
+    transform: translateY(-70px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#search-input {
+    background-color: white;
+    width: 15rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    border-top-left-radius: 10.5px;
+    border-top-right-radius: 10.5px;
+    border-bottom-left-radius: 10.5px;
+    border-bottom-right-radius: 10.5px;
+    padding: 5px;
+    background-image: url('images/search-icon.png'), url('images/mic-image.png');
+    background-size: 20px 20px, 25px 25px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+}
+
+#search-form {
+    display: inline-block;
+}
+
+#bell-icon {
+    font-size: 25px;
+    color: white;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+#user-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url('images/my_image2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(18px);
+    margin-left: 30px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    /* border: 0.2px solid white; */
+    border-radius: 50%;
+    background-image: url('images/horizon-logo.png');
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: 55% 53%;
+    display: inline-block;
+    padding: 0.65rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#logo-text {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    margin-left: 10px;
+    transform: translateY(-20px);
+}
+
+#logo-text a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Aside Section */
+
+aside {
+    margin-top: 4%;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+}
+
+
+/* Main Section */
+
+main {
+    width: 65%;
+    height: auto;
+    display: inline-block;
+    margin: 5%;
+    /* border: 2px solid white; */
+}
+
+main>div {
+    width: 100%;
+    height: 50%;
+    display: inline-block;
+}
+
+#artist {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(to right, black, lightgrey 500%);
+}
+
+#artist>div {
+    width: 50%;
+    display: inline-block;
+    /* border: 1px solid white; */
+    height: 100%;
+}
+
+#artist-details {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#div-heading {
+    display: inline-block;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#artist div div {
+    display: inline-block;
+}
+
+#artist-info {
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span {
+    display: inline-block;
+}
+
+.edit {
+    margin-top: 25%;
+    transform: translateX(26%);
+    background-color: yellow;
+    /* Green */
+    border: none;
+    color: Black;
+    cursor: pointer;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+/* Lists */
+
+.list {
+    width: 100%;
+    height: 12%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /* border: 1px solid white; */
+    transition: all ease-in-out 0.2s;
+}
+
+.list:hover {
+    background-color: #191818;
+}
+
+.list span,
+i {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* #222831 */
+
+#heart {
+    /* display: inline-block; */
+    font-size: 1rem;
+    float: right;
+    transform: translateY(15px);
+}
+
+#plus {
+    font-size: 1rem;
+    float: right;
+    margin-left: 2%;
+    transform: translateY(15px);
+}
+
+.song-number {
+    display: inline-block;
+    transform: translateY(-18px);
+    margin-right: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#list-img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 3%;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.list-detail {
+    vertical-align: top;
+    display: inline-block;
+}
+
+#list-container {
+    max-height: 90vh;
+    overflow-y: auto;
+    scrollbar-color: transparent;
+}
+
+#list-container2 {
+    max-height: 90vh;
+    overflow-y: auto;
+    scrollbar-color: transparent;
+}
+
+#list-container::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+#similar-artists {
+    width: 100%;
+    height: 30%;
+}
